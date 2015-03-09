@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Feature Extraction Library - FELib</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="5">Feature Extraction Library - FELib</font></b></p>
+
+ <p align="justify">&nbsp; FELib Version 1.2, updated on Dec. 31, 2008. Before downloading the material, please read and agree to the <a href="term.htm">terms</a> of using our datasets 
+    and/or implementation.<b><br>
+<table style="BORDER-COLLAPSE: collapse" borderColor="#111111" height="176" cellSpacing="0" cellPadding="0" width="95%" border="0">
+  <tr>
+    <td width="100%" height="19">&nbsp;</td>
+  </tr>
+   
+  <tr>
+    <td width="100%" height="133">
+    <table style="BORDER-COLLAPSE: collapse" borderColor="#111111" height="1" cellSpacing="0" cellPadding="0" width="100%" border="0">
+      <tr>
+        <td width="100%" height="14">
+        <p align="justify"></td>
+      </tr>
+
+     <tr>
+        <td width="100%" bgColor="#cccccc" height="25"><font size="4">
+        Readme </font></td>
+      </tr>
+      <tr>
+        <td width="100%" height="14">
+        <ul>
+	<li> <p align="justify"><font face="Times New Roman"> This software extracts the five kinds of features: 
+			1. Color histogram, color moments. 2. Edge histogram.  3. Gabor wavelets transform. 4. Local Binary Pattern.	5. GIST.</li>
+          <li> <p align="justify"><font face="Times New Roman">Requirement: Matlab 7.3 or above, OpenCV library. For Mac OSX, you need install OpenCV according to this <a href="http://opencvlibrary.sourceforge.net/Mac_OS_X_OpenCV_Port">guide</a>.</li>
+		 <li> <p align="justify"><font face="Times New Roman">Install and usage. Please follow the instruction described in <a href="felib/readme.txt">readme</a>.</li>
+		 <li> <p align="justify"><font face="Times New Roman"><a href="felib/extractFeatures.zip">Download code</a>.</li>
+		 <li> <p align="justify"><font face="Times New Roman">Bug reports are welcome. Please write to Jianke Zhu (jianke.zhu_at_gmail.com).</li>
+
+        </ul>
+        <p align="justify">&nbsp;</td>
+      </tr>
+
+     <tr>
+        <td width="100%" bgColor="#cccccc" height="25"><font size="4">
+       Change Log </font></td>
+      </tr>
+      <tr>
+        <td width="100%" height="14">
+        <ul>
+	<li> <p align="justify"><font face="Times New Roman"> v1.2, 2008/12/31<br> 
+Correct lots of errors in the comiple instructions.<br>
+Add compile.m to facilitate a successful compilation<br>
+Instruction on nomalizing the vector to zero mean and unit variance. This is important
+to obtain good retrieval results on a large collection of the diverse images.<br></li>
+          <li> <p align="justify"><font face="Times New Roman">v1.1, 2008/11/22<br>
+Add GIST feature implementation.</li>
+
+        </ul>
+        <p align="justify">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td width="100%" bgColor="#cccccc" height="25"><font size="4">
+        Related publication </font></td>
+      </tr>
+      <tr>
+        <td width="100%" height="14">
+        	
+        This toolbox is used to extract the image features in the following publications:
+        <ul>
+          <li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Semi-Supervised SVM Batch Mode
+Active Learning with Applications to Image Retrieval</u>,&quot;<br>
+         Steven C.H. Hoi, Rong Jin, Jianke Zhu, and Michael R. Lyu<br>
+          To appear in ACM Transactions on Information Systems (TOIS), 2009. <br></li>
+        </ul>
+        
+         <ul>
+		<li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Near-Duplicate Keyframe Retrieval by Semi-Supervised Learning and Nonrigid Image Matching</u>,&quot;<br>
+          Jianke Zhu, Steven C.H. Hoi, Michael R. Lyu and Shuicheng Yan<br>
+          CUHK technical report.<br></li>
+        </ul>
+       
+        <ul>
+          <li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Near-Duplicate Keyframe Retrieval by Nonrigid Image Matching</u>,&quot;<br>
+          Jianke Zhu, Steven C.H. Hoi, Michael R. Lyu and Shuicheng Yan<br>
+          <a style="color: #FFFFFF; text-decoration: none" href="http://www.mcrlab.uottawa.ca/acmmm2008/"><font color="#0000ff">ACM Multimedia 2008</font></a>, pp. 41-50. 2008. (<a style="color: #FFFFFF; text-decoration: none" href="pdfs/mm08.pdf"><font color="#0000ff">PDF</font></a>, <a style="color: #FFFFFF; text-decoration: none" href="pdfs/mm08_ppt.pdf"><font color="#0000ff">PPT</font></a>)<br></li>
+        </ul>
+ 
+        <ul>
+          <li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Semi-Supervised SVM Batch Mode 
+Active Learning for Image Retrieval</u>,&quot;<br>
+         Steven C.H. Hoi, Rong Jin, Jianke Zhu, and Michael R. Lyu<br>
+          In Proceedings of IEEE Conference on Computer Vision 
+and Pattern Recognition (CVPR2008), Alaska, 24-26 June, 2008. <br></li>
+        </ul>
+
+        <ul>
+          <li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Face Annotation by Transductive Kernel Fisher Discriminant</u>,&quot;<br>
+          Jianke Zhu, Steven C.H. Hoi and Michael R. Lyu<br>
+          IEEE Trans. on Multimedia, vol. 10, pp. 86-96. <br></li>
+        </ul>
+        <p align="justify">&nbsp;</td>
+      </tr>
+      
+
+      <tr>
+        <td width="100%" bgColor="#cccccc" height="23">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="100%" height="1"><br>
+        Back to <a href="http://www.cse.cuhk.edu.hk/~jkzhu">Jianke Zhu's Home</a></td>
+      </tr>
+    </table>
+    <p>&nbsp;&nbsp; </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Near-Duplicate Keyframe Retrieval by Semi-Supervised Learning and Nonrigid Image Matching </title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="5">Near-Duplicate Keyframe Retrieval by Semi-Supervised Learning and Nonrigid Image Matching</font></b></p>
+<p align="center"><font style="font-size: 13pt"> <a href="http://www.cse.cuhk.edu.hk/~jkzhu">Jianke Zhu</a>, <a href="http://www.ntu.edu.sg/home/chhoi">Steven C. H. Hoi</a>, <a href="http://www.cse.cuhk.edu.hk/~lyu">Michael R. Lyu</a> and <a href="http://www.ece.nus.edu.sg/stfpage/eleyans">Shuicheng Yan</a></font></p>
+
+ <p align="justify">&nbsp; Updated on Nov. 22, 2008. Before downloading the material, please read and agree to the <a href="term.htm">terms</a> of using our datasets 
+    and/or implementation.<b><br>
+<table style="BORDER-COLLAPSE: collapse" borderColor="#111111" height="176" cellSpacing="0" cellPadding="0" width="95%" border="0">
+  <tr>
+    <td width="100%" height="19">&nbsp;</td>
+  </tr>
+   
+  <tr>
+    <td width="100%" height="133">
+    <table style="BORDER-COLLAPSE: collapse" borderColor="#111111" height="1" cellSpacing="0" cellPadding="0" width="100%" border="0">
+      <tr>
+        <td width="100%" height="14">
+        <p align="justify"></td>
+      </tr>
+      <tr>
+        <td width="100%" bgColor="#cccccc" height="25"><font size="4">
+        Manuscript </font></td>
+      </tr>
+      <tr>
+        <td width="100%" height="14">
+        <p align="justify">&nbsp;</p>
+        <ul>
+          <li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Near-Duplicate Keyframe Retrieval by Nonrigid Image Matching</u>,&quot;<br>
+          Jianke Zhu, Steven C.H. Hoi, Michael R. Lyu and Shuicheng Yan<br>
+          <a style="color: #FFFFFF; text-decoration: none" href="http://www.mcrlab.uottawa.ca/acmmm2008/"><font color="#0000ff">ACM Multimedia 2008</font></a>, pp. 41-50. (<a style="color: #FFFFFF; text-decoration: none" href="pdfs/mm08.pdf"><font color="#0000ff">PDF</font></a>, <a style="color: #FFFFFF; text-decoration: none" href="pdfs/mm08_ppt.pdf"><font color="#0000ff">PPT</font></a>)<br></li>
+        </ul>
+
+ <ul>
+		<li>
+          <p align="justify"><font face="Times New Roman">&quot;<u>Near-Duplicate Keyframe Retrieval by Semi-Supervised Learning and Nonrigid Image Matching</u>,&quot;<br>
+          Jianke Zhu, Steven C.H. Hoi, Michael R. Lyu and Shuicheng Yan<br>
+          CUHK technical report.<br></li>
+        </ul>
+        <p align="justify">&nbsp;</td>
+      </tr>
+      
+     <tr>
+        <td width="100%" bgColor="#cccccc" height="25"><font size="4">
+        Implementation </font></td>
+      </tr>
+      <tr>
+        <td width="100%" height="14">
+        <p align="justify">&nbsp;</p>
+        <ul>
+	
+	<li> <p align="justify"><font face="Times New Roman"> Experiments are updated.</li>
+	
+	<li> <p align="justify"><font face="Times New Roman">Acknowledgments: <a href="http://www.ee.columbia.edu/ln/dvmm/researchProjects/FeatureExtraction/NearDuplicateByParts/INDDetection.html"> Columbia dataset</a>, <a href="http://vireo.cs.cityu.edu.hk/research/NDK/ndk.html"> CityU dataset</a>, <a href="http://www.vision.ee.ethz.ch/~surf"> SURF library</a>,<a href="http://www.cs.ubc.ca/~lowe/keypoints/"> SIFT</a>, <a href="http://sourceforge.net/projects/opencvlibrary/"> OpenCV</a>, and <a href="http://www.cs.ubc.ca/~lowe/keypoints/"> Peter Kovesi's Functions for Computer Vision</a> </li>
+          <li> <p align="justify"><font face="Times New Roman">Requirement: Matlab 7.3 or above, no other requirement for Experiment 3 and 4. For other experiments, OpenCV library is necessary. The NIM code is built by MSVC 9.0 in Windows, and Matlab 7.4 in Mac OSX 10.5.1. We have included the pre-built OpenCV library for windows version. As for Mac OSX, you need install OpenCV according to this <a href="http://opencvlibrary.sourceforge.net/Mac_OS_X_OpenCV_Port">guide</a>. (**NIM may fail to be recognized as an MEX routine on previous version Matlab and MSVC in Windows, need fix in future )</li>
+		  <li> <p align="justify"><font face="Times New Roman"><a href="mm08/nimexp.zip">Source code</a> for the extended version with updated experiments.</li>
+		  <li> <p align="justify"><font face="Times New Roman"><a href="felib.html">Feature extraction toolbox</a>. Download <a href="felib/extractFeatures.zip">Code</a>.</li>
+		  <li> <p align="justify"><font face="Times New Roman"> <a href="mm08/mm08code.zip">Archived code and data</a> for ACM MM'08.</li>
+			<li> <p align="justify"><font face="Times New Roman">Bug reports are welcome. Please contact Jianke Zhu (jianke.zhu_at_gmail.com).</li>
+		
+        </ul>
+        <p align="justify">&nbsp;</td>
+      </tr>
+
+<tr>
+<td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 1 </font></td>
+</tr>
+<td width="100%" height="13"><br>
+We compare the the total number of inlier matches with each of three methods: projective geometry, OOS-SIFT (with pattern entropy) and our NIM method on the SIFT features. <br>
+Note that <a href="http://www.ee.columbia.edu/ln/dvmm/researchProjects/FeatureExtraction/NearDuplicateByParts/INDDetection.html"> Columbia dataset</a> is needed for running this examples. Due to copyright permission issue, we can not provide the image files.
+<br>
+<p align="justify">&nbsp;
+</td>
+
+    <tr>
+	        <td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 2: Case Study for NIM method. [<a href="exp2.htm">All 150 near-duplicate pairs in Columbia dataset</a>] </font></td>
+	      </tr>
+	      <tr>
+	        <td width="100%" height="13"><br>
+	&nbsp; Some NIM detection results on various near-duplicate keyframe cases. All 150 near-duplicate pairs in Columbia dataset can be found <a href="exp2.htm">here</a>.<br>
+	&nbsp;<table border="1" cellspacing="1" width="98%" height="38">
+        <tr>
+          <td><img border="0" src="images/19980603_ABC_004162.jpg" width="240"></td>
+          <td><img border="0" src="images/19980624_ABC_002434.jpg" width="240"></td>
+          <td><img border="0" src="images/19980311_ABC_012370.jpg" width="240"></td>
+          <td><img border="0" src="images/19980609_CNN_009356.jpg" width="240"></td>
+        </tr>
+        <tr>
+          <td align="center">Viewpoint changes</td>
+		  <td align="center">Viewpoint changes</td>
+          <td align="center">Object movements</td>
+		  <td align="center">Object movements</td>
+        </tr>
+
+        <tr>
+          <td><img border="0" src="images/19980508_CNN_008653.jpg" width="240"></td>
+          <td><img border="0" src="images/19980309_ABC_021240.jpg" width="240"></td>
+          <td><img border="0" src="images/19980609_CNN_009356.jpg" width="240"></td>
+          <td><img border="0" src="images/19980605_CNN_008866.jpg" width="240"></td>
+        </tr>
+        <tr>
+          <td align="center">Lens changes</td>
+		  <td align="center">Lens changes</td>
+          <td align="center">Subimage duplicates</td>
+		  <td align="center">Subimage duplicates</td>
+        </tr>
+
+        <tr>
+          <td><img border="0" src="images/19980525_CNN_011606.jpg" width="240"></td>
+          <td><img border="0" src="images/19980617_CNN_000134.jpg" width="240"></td>
+          <td><img border="0" src="images/19980327_CNN_028536.jpg" width="240"></td>
+          <td><img border="0" src="images/19980603_CNN_002170.jpg" width="240"></td>
+        </tr>
+        <tr>
+          <td align="center">Small regional changes</td>
+		  <td align="center">Small regional changes</td>
+          <td align="center">Object movements</td>
+		  <td align="center">Object movements</td>
+        </tr>
+
+	        </table>
+&nbsp;Note that <a href="http://www.ee.columbia.edu/ln/dvmm/researchProjects/FeatureExtraction/NearDuplicateByParts/INDDetection.html"> Columbia dataset</a> is needed to run this examples. Due to copyright permission issue, we can not provide the image files.
+<p align="justify">&nbsp;</td>
+	      </tr>
+     
+		<tr>
+		<td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 3: Ranking on the global features. [<a href="mm08/exp3.html">Source Code</a>]</font></td>
+		</tr>
+		<td width="100%" height="13"><br>
+		To examine how effective the global features are, we measure the retrieval performance of different distance measures with global features. In addition, we also asses the performance of each component of the global features as well as the combined features.<br>
+		&nbsp;Note that we only provide the extracted features from the Columbia dataset.
+		<br>
+		<p align="justify">&nbsp;
+		</td>
+
+		<tr>
+		<td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 4: Performance of the Semi-supervised SVM Ranking. [<a href="mm08/exp4.html">Source Code</a>] </font></td>
+		</tr>
+		<td width="100%" height="13"><br>
+	     We compare the proposed semi-supervised ranking approach using S3VM method with the conventional approaches, such as color histogram and color moments.<br>
+		&nbsp;Note that we only provide the extracted features from the Columbia dataset.
+		<br>
+		<p align="justify">&nbsp;
+		</td>
+		
+		<tr>
+		<td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 5: Re-ranking with NIM on Local features.[<a href="mm08/exp5.html">Source Code</a>] </font></td>
+		</tr>
+		<td width="100%" height="13"><br>
+	    We evaluate the proposed NIM re-ranking method for NDK retrieval using local features. First, we study the parameter choices for the NIM ranking, then plot the comparison results with the OOS, VK method.<br>
+	 
+		<br>
+		<p align="justify">&nbsp;
+		</td>
+		
+		<tr>
+		<td width="100%" bgColor="#cccccc" height="25"><font size="4">Experiments 6: Computational cost evaluation on NIM.[<a href="mm08/exp6.html">Source Code</a>] </font></td>
+		</tr>
+		<td width="100%" height="13"><br>
+	    Finally, we empirically examine the efficiency performance of the proposed NIM and Semi-Supervised SVM method.<br>
+	 
+		<br>
+		<p align="justify">&nbsp;
+		</td>
+
+      <tr>
+        <td width="100%" bgColor="#cccccc" height="23">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="100%" height="1"><br>
+        Back to <a href="http://www.cse.cuhk.edu.hk/~jkzhu">Jianke Zhu's Home</a></td>
+      </tr>
+    </table>
+    <p>&nbsp;&nbsp; </td>
+  </tr>
+</table>
+
+</body>
+
+</html>
