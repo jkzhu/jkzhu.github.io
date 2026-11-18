@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sculpture — Support</title>
+<meta name="description" content="Support page for Sculpture, the on-device 3D person-scan app for iPhone and iPad.">
+<style>
+  :root {
+    --bg: #faf9f7; --fg: #1d1c1a; --muted: #6b6862; --card: #ffffff;
+    --accent: #b0603f; --line: #e8e5e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171614; --fg: #ecebe8; --muted: #a3a09a; --card: #201f1c; --accent: #d98a68; --line: #2e2c29; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
+  .logo { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; margin: 0; }
+  .tagline { color: var(--muted); margin: 4px 0 0; }
+  section { margin-top: 36px; }
+  h2 { font-size: 19px; margin: 0 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px;
+  }
+  ul { margin: 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="logo">Sculpture</h1>
+  <p class="tagline">3D from a walk-around video — on your iPhone or iPad.</p>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>For support, feedback, or any questions about Sculpture, email us at
+      <a href="mailto:zhujianke@outlook.com">zhujianke@outlook.com</a>.
+      We aim to reply within a few days.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Sculpture works</h2>
+    <p>Point your camera at one person and slowly walk around them for 10–30 seconds.
+    Sculpture reconstructs the subject on your device as a photorealistic 3D capture
+    you can orbit, zoom, and share as a Gaussian splat file (.ply or .spz). No account
+    is required and nothing is uploaded — all processing happens on your device.</p>
+  </section>
+
+  <section>
+    <h2>Tips for great scans</h2>
+    <ul>
+      <li>Film one person, framed head to toe, with room to walk around them.</li>
+      <li>Move slowly and keep a steady circle around the subject.</li>
+      <li>Choose even lighting and a simple background.</li>
+      <li>Hold the phone in portrait, roughly at chest height.</li>
+      <li>Keep your device awake until the reconstruction finishes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>“Camera tracking failed.”</strong> Film a slower orbit with better lighting and try again.</li>
+      <li><strong>“Couldn’t separate the person from the background.”</strong> Keep the subject clearly in frame against a simple background.</li>
+      <li><strong>“Not enough memory to finish.”</strong> Try again, or use a shorter video.</li>
+      <li><strong>“Not enough storage on this device.”</strong> Free up space and try again.</li>
+      <li><strong>A scan didn’t turn out well?</strong> Every video stays in your Library — tap <em>Rebuild scan</em> to reconstruct it again any time.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="muted">Sculpture requires iOS 16 or later.<br>
+    <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
